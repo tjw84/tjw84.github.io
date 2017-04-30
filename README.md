@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
+<meta charset="utf-8">
 <head>
-    <meta charset="utf-8">
     <title>Home | tjw84 | Forgotten Stories of Waymalan</title>
 
     </head>
