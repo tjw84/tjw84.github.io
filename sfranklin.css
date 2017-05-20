@@ -1,16 +1,16 @@
-* {
- box-sizing: border-box; /* changes width property
-    to total width instead of content width */
+/* {
+ box-sizing: border-box; changes width property
+    to total width instead of content width 
 }
 
-article,
+ article,
 aside,
 footer,
 header,
 nav,
 section,
 main,
-figcaption,
+figcaption,*/
 figure {
  display: block; /* just in case we have
 any older browsers that don't recognize
