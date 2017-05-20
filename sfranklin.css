@@ -37,4 +37,6 @@ nav {
     right: 0;
 }
 
-
+li {
+    padding-left: 20px
+}
