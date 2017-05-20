@@ -19,3 +19,13 @@ body {
     padding: 0;
     background-color: salmon;
 }
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+ul {
+    display: flex
+}

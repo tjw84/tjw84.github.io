@@ -20,13 +20,18 @@ body {
  padding: 0;
  background-color: salmon;
 }
- main {
+ 
+main {
  display: flex;
  flex-flow: column nowrap;
  align-items: center;
-} ul {
+} 
+
+ul {
  display: flex;
-} nav ~ p {
+} 
+
+nav ~ p {
 margin-bottom: 20px;
 }
 
