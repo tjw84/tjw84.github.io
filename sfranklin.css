@@ -1,8 +1,8 @@
-* {
- box-sizing: border-box;  
+*{
+    box-sizing: border-box;
 }
 
- article,
+article,
 aside,
 footer,
 header,
@@ -11,20 +11,11 @@ section,
 main,
 figcaption,
 figure {
- display: block; 
+    display: block
 }
 
 body {
- margin: 0; 
- padding: 0;
- background-color: salmon;
-}
- main {
- display: flex;
- flex-flow: column nowrap;
- align-items: center;
-} ul {
- display: flex;
-} nav ~ p {
-margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
 }
