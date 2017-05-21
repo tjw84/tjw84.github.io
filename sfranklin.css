@@ -118,3 +118,7 @@ div.current {
     border-radius: 5px;
 }
 
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em
+}
