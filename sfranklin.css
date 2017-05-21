@@ -73,19 +73,19 @@ nav {
     a:link {
         text-decoration: none;
         color: #47556F;
-        a:hover {
+    }
+    a:hover {
             color: #E7EF61;
         }
-        a:normal {
+    a:normal {
            color: #4A4653;
         }
-        a:visited {
+    a:visited {
             color: #4A4653;
         }
-        a:active {
+    a:active {
            color: #A6D8DB;
         }
-    }
 }
 
 li {
