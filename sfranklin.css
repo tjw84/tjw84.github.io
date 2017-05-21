@@ -1,5 +1,10 @@
-@import url(https://fonts.google.com/specimen/Sansita);
+@import url("https://fonts.googleapis.com/css?family=Sansita");
 @import url(https://www.fonts.com/font/linotype/helvetica?QueryFontType=Web&src=GoogleWebFonts);
+
+/*
+I know these imports wont work but I couldn't find any free ones like stated so I'm using them as
+place holders till i figure it out.
+*/
 
 *{
     box-sizing: border-box;
@@ -25,9 +30,11 @@ footer
 
 body {
     font-family: Helvetica;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     background-color: salmon;
+    background-image: image(tjw84.github.io/weather/sunny-winter.jpg)
 }
 
 main {
