@@ -27,6 +27,9 @@ footer
     background-color: #A6D8D8;
 }
 
+h3 + h2 {
+    display: none
+}
 
 body {
     font-family: Helvetica;
@@ -36,6 +39,9 @@ body {
     background-color: salmon;
     background-image: url(weather/sunny-winter.jpg);
     background-size: cover;
+    @media screen and (min-width: 600px){
+        
+    }
 }
 
 main {
