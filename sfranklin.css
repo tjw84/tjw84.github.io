@@ -89,3 +89,10 @@ h2 {
     border: 1px solid;
     border-radius: 5px;
 }
+
+h2 ~ p {
+    background-color: RGBA(200,200,200,.6); 
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
