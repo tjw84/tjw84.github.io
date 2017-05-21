@@ -70,11 +70,16 @@ nav {
     bottom: 1em;
     left: 0;
     right: 0;
+    
+        }
+}
+
+nav link {
     a:link {
         text-decoration: none;
         color: #47556F;
     }
-    a:hover {
+    a::hover {
             color: #E7EF61;
         }
     a:normal {
@@ -85,7 +90,6 @@ nav {
         }
     a:active {
            color: #A6D8DB;
-        }
 }
 
 li {
