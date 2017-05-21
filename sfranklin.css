@@ -69,6 +69,10 @@ nav {
     bottom: 1em;
     left: 0;
     right: 0;
+    a:link {
+        text-decoration: none;
+        color: #47556F
+    }
 }
 
 li {
@@ -80,5 +84,8 @@ h {
 }
 
 h2 {
-    
+    background-color: RGBA(200,200,200,.6); 
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
