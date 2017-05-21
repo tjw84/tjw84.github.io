@@ -1,5 +1,6 @@
 @import url(https://fonts.google.com/specimen/Sansita);
 @import url(https://www.fonts.com/font/linotype/helvetica?QueryFontType=Web&src=GoogleWebFonts);
+
 *{
     box-sizing: border-box;
 }
@@ -49,7 +50,7 @@ nav {
 }
 
 li {
-    padding-left: 20px
+    padding-left: 10px
 }
 
 h {
