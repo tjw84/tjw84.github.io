@@ -27,7 +27,7 @@ footer
     background-color: #A6D8D8;
 }
 
-h3 + h2 {
+p.hour {
     display: none
 }
 
