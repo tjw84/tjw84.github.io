@@ -27,12 +27,16 @@ footer
     background-color: #A6D8D8;
 }
 
+footer {
+    bottom: 0;
+}
+
 span {
-    display: none
+    display: none;
 }
 
 .hour {
-    display: none
+    display: none;
 }
 
 body {
@@ -62,7 +66,7 @@ ul {
 nav {
     background-color: #F07C6C;
     position: fixed;
-    bottom: 20px;
+    bottom: 20;
     left: 0;
     right: 0;
 }
