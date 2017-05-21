@@ -29,6 +29,7 @@ footer
 
 footer {
     bottom: 0;
+    color: #E7EF61
 }
 
 span {
@@ -71,7 +72,19 @@ nav {
     right: 0;
     a:link {
         text-decoration: none;
-        color: #47556F
+        color: #47556F;
+        a:hover {
+            color: #E7EF61;
+        }
+        a:normal {
+           color: #4A4653;
+        }
+        a:visited {
+            color: #4A4653;
+        }
+        a:active {
+           color: #A6D8DB;
+        }
     }
 }
 
@@ -90,9 +103,18 @@ h2 {
     border-radius: 5px;
 }
 
+div.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
+/*
+An attempt to use a div with id as "current" but doesn't appear to work as desired, selects all divs so it is being commented out for latter use so div edits in css are still usable (i now see i needed to set class not id itself):
+
 div.current {
     background-color: RGBA(200,200,200,.6); 
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
 }
+*/
