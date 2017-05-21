@@ -34,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: salmon;
-    background-image: image(tjw84.github.io/weather/sunny-winter.jpg)
+    background-image: url(weather/sunny-winter.jpg)
 }
 
 main {
