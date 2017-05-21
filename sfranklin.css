@@ -27,9 +27,6 @@ footer
     background-color: #A6D8D8;
 }
 
-footer {
-    bottom: 60px
-}
 span {
     display: none
 }
@@ -65,7 +62,7 @@ ul {
 nav {
     background-color: #F07C6C;
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
 }
