@@ -31,7 +31,7 @@ footer {
     bottom: 0;
 }
 
-span {
+span.hour {
     display: none
 }
 
@@ -90,7 +90,7 @@ h2 {
     border-radius: 5px;
 }
 
-div.current {
+span.current {
     background-color: RGBA(200,200,200,.6); 
     margin: .2em auto;
     border: 1px solid;
