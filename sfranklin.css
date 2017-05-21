@@ -122,3 +122,9 @@ div.current {
     text-align: right;
     margin-top: -.7em
 }
+
+p.boxs {
+     background-color: RGBA(200,200,200,.6); 
+    margin: .2em auto;
+    border: 1px solid;
+}
