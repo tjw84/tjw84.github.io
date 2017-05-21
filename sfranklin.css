@@ -110,11 +110,11 @@ div.rotate25 {
 
 /*
 An attempt to use a div with id as "current" but doesn't appear to work as desired, selects all divs so it is being commented out for latter use so div edits in css are still usable (i now see i needed to set class not id itself):
-
+*/
 div.current {
     background-color: RGBA(200,200,200,.6); 
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
 }
-*/
+
