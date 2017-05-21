@@ -27,7 +27,7 @@ footer
     background-color: #A6D8D8;
 }
 
-p.hour {
+.hour {
     display: none
 }
 
@@ -69,4 +69,8 @@ li {
 
 h {
     font-family: Sansita, "second choice", generic-family;
+}
+
+h2 {
+    
 }
