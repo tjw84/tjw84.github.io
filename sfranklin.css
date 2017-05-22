@@ -70,20 +70,20 @@ nav {
     bottom: 1em;
     left: 0;
     right: 0;
-    a:link {
+    a.highlight:link {
         text-decoration: none;
         color: #47556F;
     }
-    a:hover {
+    a.highlight:hover {
             color: #E7EF61;
         }
-    a:normal {
+    a.highlight:normal {
            color: #4A4653;
         }
-    a:visited {
+    a.highlight:visited {
             color: #4A4653;
         }
-    a:active {
+    a.highlight:active {
            color: #A6D8DB;
         }
 }
