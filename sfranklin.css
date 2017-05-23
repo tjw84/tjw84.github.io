@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Sansita");
-@import url(https://www.fonts.com/font/linotype/helvetica?QueryFontType=Web&src=GoogleWebFonts);
 
 /*
 I know these imports wont work but I couldn't find any free ones like stated so I'm using them as
@@ -93,7 +92,7 @@ li {
 }
 
 h {
-    font-family: Sansita, "second choice", generic-family;
+    font-family: Sansita, sans-serif, generic-family;
 }
 
 h2 {
@@ -117,7 +116,7 @@ div.current {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-    bottom: 40px
+    margin-bottom: 40px
 }
 
 .title h1 + h1 {
