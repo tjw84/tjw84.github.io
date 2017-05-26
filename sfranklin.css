@@ -62,6 +62,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding-left: 0;
 }
 
 nav {
@@ -104,6 +105,7 @@ h2 {
 .rotate25 {
     transform: rotate(25deg);
     display: inline-block;
+    padding: -1em;
 }
 
 
