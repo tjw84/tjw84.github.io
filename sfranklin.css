@@ -31,7 +31,7 @@ footer {
     color: #E7EF61
 }
 
-span {
+.hide {
     display: none
 }
 
@@ -40,7 +40,7 @@ span {
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif, arial;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -101,7 +101,7 @@ h2 {
     border-radius: 5px;
 }
 
-div.rotate25 {
+.rotate25 {
     transform: rotate(25deg);
     display: inline-block;
 }
@@ -113,7 +113,7 @@ div.current {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .title h1 + h1 {
@@ -124,6 +124,10 @@ div.current {
 .boxs {
     text-align: center;
      background-color: RGBA(200,200,200,.6); 
-    margin: 2em auto;
+    margin: .2em auto;
     border: 1px solid;
+}
+
+li {
+    padding: 0;
 }
