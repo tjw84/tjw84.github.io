@@ -27,7 +27,7 @@ footer
 }
 
 footer {
-    bottom: 0;
+    bottom: -2em;
     color: #E7EF61
 }
 
@@ -42,14 +42,12 @@ footer {
 body {
     font-family: Helvetica, sans-serif, arial;
     font-size: 20px;
-    margin: 0;
+    margin: .15em;
     padding: 0;
     background-color: salmon;
     background-image: url(weather/sunny-winter.jpg);
     background-size: cover;
-    @media screen and (min-width: 600px){
-        
-    }
+    
 }
 
 main {
@@ -63,6 +61,13 @@ ul {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
+    margin: 0;
+    height: 50%;
+}
+
+#space {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 nav {
@@ -71,6 +76,7 @@ nav {
     bottom: 1em;
     left: 0;
     right: 0;
+    padding-top: 0;
 }
 
  .highlight:link {
@@ -95,27 +101,29 @@ h {
     font-family: Sansita, sans-serif, generic-family;
 }
 
-h2 {
-    background-color: RGBA(200,200,200,.6); 
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 5px;
-}
 
 .rotate25 {
     transform: rotate(25deg);
     display: inline-block;
-    padding: -1em;
+    margin-left: -.4em;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+} 
 
 div.current {
     display: flex;
     background-color: RGBA(200,200,200,.6); 
-    margin: .2em auto;
+    margin: 1em auto;
     border: 1px solid;
     border-radius: 5px;
     margin-bottom: 40px;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    
 }
 
 .title h1 + h1 {
@@ -133,3 +141,60 @@ div.current {
 li {
     padding: 0;
 }
+
+#space {
+    display: none;
+}
+
+#mtemp {
+    font-size: 2em
+}
+
+/*
+setup for larger screens (ones over 600 pixels in width)
+*/
+
+@media screen and (min-width: 800px){
+    nav {
+    position:inherit;
+    margin-top:  -1.5em;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    }
+    
+    
+    
+    main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+    
+    .hide {display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif, arial;
+    font-size: 20px;
+    text-align: center;
+    background-color: RGBA(200,200,200,.6); 
+    margin: .2em auto;
+    border: 1px solid;
+    }
+    
+    .current {
+        order: -2
+    }
+    body {
+        margin-top: -3em;
+        
+    }
+    
+    footer {
+        margin-bottom: -180em}
+    
+    #space {
+        display: block;
+    }
+    
+    }
