@@ -70,6 +70,9 @@ ul {
     padding-right: 1em;
 }
 
+/*
+Navigation bar collors based on link state
+*/
 nav {
     background-color: #F07C6C;
     position: fixed;
@@ -86,9 +89,12 @@ nav {
     .highlight:hover {
             color: #E7EF61;
         }
-    .highlight: {
+/* "normal" value is giving errors so I'm commenting it out
+
+.highlight:normal {
            color: #4A4653;
         }
+*/
     .highlight:visited {
             color: #4A4653;
         }
