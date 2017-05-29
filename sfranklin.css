@@ -86,7 +86,7 @@ nav {
     .highlight:hover {
             color: #E7EF61;
         }
-    .highlight:normal {
+    .highlight: {
            color: #4A4653;
         }
     .highlight:visited {
