@@ -27,16 +27,20 @@ footer
 }
 
 footer {
-    bottom: -2em;
-    color: #E7EF61
+    bottom: 0%;
+    color: #E7EF61;
 }
 
 .hide {
-    display: none
+    display: none;
+}
+
+.hide1 {
+    display: none;
 }
 
 .hour {
-    display: none
+    display: none;
 }
 
 body {
@@ -164,7 +168,7 @@ li {
 setup for larger screens (ones over 600 pixels in width)
 */
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 1250px){
     
     nav {
     position:inherit;
@@ -186,14 +190,22 @@ setup for larger screens (ones over 600 pixels in width)
     font-family: Helvetica, sans-serif, arial;
     font-size: 20px;
     text-align: center;
-    background-color: RGBA(200,200,200,.6); 
+    
+    }
+    
+    .hide1 {display:inline-flex;
+    }
+    
+    #hour {
+      background-color: RGBA(200,200,200,.6); 
     margin: .2em auto;
-    border: 1px solid;
+    border: 1px solid;  
     }
     
     .current {
         order: -2;
-    
+    padding: 0;
+        margin: 0;
     }
     body {
         margin-top: -3em;
