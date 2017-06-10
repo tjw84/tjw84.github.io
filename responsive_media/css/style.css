@@ -52,10 +52,7 @@ h1 {
 .page-header {background-image: url(images/looking_down40.jpeg);
 	background-size: cover;
 	flex-flow: row flex-end;
-		<picture>
-	<source srcset="images/nps-logo50.jpg">
 	<img src="images/nps-logo50.jpg" alt="logo" style="width:auto;">
-			</picture>
 }
 
 
@@ -180,10 +177,7 @@ h1 {
 	.page-header {background-image: url(images/looking_down80.jpeg);
 	background-size: cover;
 		flex-flow: row flex-end;
-		<picture>
-	<source srcset="images/nps-logo100.jpg">
 	<img src="images/nps-logo100.jpg" alt="logo" style="width:auto;">
-			</picture>
 	}
 	.page-nav {
 		position: relative;
@@ -233,10 +227,7 @@ h1 {
 	background-image: url(images/looking_down120.jpeg);
 	background-size: cover;
 	flex-flow: row flex-end;
-		<picture>
-	<source srcset="images/nps-logo150.jpg">
 	<img src="images/nps-logo150.jpg" alt="logo" style="width:auto;">
-			</picture>
 	}
 	.page-nav li {
 		flex: 0 1 10%;
