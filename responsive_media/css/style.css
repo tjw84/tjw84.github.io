@@ -49,11 +49,12 @@ h1 {
 
 /*	Background Images - use with Small screens */
 
-.page-header {background-image: url(https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/looking_down40.jpg);
+.page-header {
+	background-image: url(https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/looking_down40.jpg);
 	background-size: cover;
 	flex-flow: row;
 	align-content: flex-end;
-	<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo50.png" alt="logo" style="width:auto">
+	<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo50.png" alt="logo" style="width:auto;">
 }
 
 
@@ -175,11 +176,12 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {background-image: url(https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/looking_down80.jpg);
+	.page-header {
+	background-image: url(https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/looking_down80.jpg);
 	background-size: cover;
 		flex-flow: row;
 	align-content: flex-end;
-	<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo100.png" alt="logo" style="width:auto;">
+<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo100.png" alt="logo" style="width:auto;">
 	}
 	.page-nav {
 		position: relative;
@@ -230,7 +232,7 @@ h1 {
 	background-size: cover;
 	flex-flow: row;
 	align-content: flex-end;
-	<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo150.png" alt="logo" style="width:auto;">
+<img src="https://github.com/tjw84/tjw84.github.io/blob/master/responsive_media/images/nps-logo150.png" alt="logo" style="width:auto;">
 	}
 	.page-nav li {
 		flex: 0 1 10%;
