@@ -4,28 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.0.0.min.js"></script>
-	<script>
+<!--	<script src="js/jquery-3.0.0.min.js"></script>-->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script>
 	$(function(){
 		// jQuery Code goes here
 
+        //video1
+        
+        //part1
         // console.log($('input[type= "text"]').css('background-color'));
         
-var toggleStyle = function() {
-    
-    var inputFields = $('input[type= "text"]');
-    
-      if(inputFields.css('background-color') === 'rgb(255,0,0)') {
-          inputFields.css('background-color', 'rgb(255,255,255)');
-      }
-    
-    else{
-        inputFields.css('background-color', 'rgb(255,0,0)');
-    }
-        }
-        $('#ReqAQuoteBtn').click(toggleStyle);
-    
-    })
+        // part2
+//var toggleStyle = function() {
+//    
+//    var inputFields = $('input[type= "text"]');
+//    
+//      if(inputFields.css('background-color') === 'rgb(255, 0, 0)') {
+//          inputFields.css('background-color', 'rgb(255,255,255)');
+//      }
+//    
+//    else{
+//        inputFields.css('background-color', 'rgb(255,0,0)');
+//    }
+//        }
+//        $('#ReqAQuoteBtn').click(toggleStyle);
+//    
+        //video2
+//$('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>")
+//
+//$("<li><strong>This is also great !!</strong></li>").prependTo('.coreValues')
+  
+var nameVal =$('input[name="nameVal"]')        
+       
+   function FillEmpty(){
+       if( nameVal.val() == '' ){
+           nameVal.val( 'John Doe');
+       }
+   }     
+      $('#ReqAQuoteBtn').click( FillEmpty);
+        
+       }) 
 	</script>
 </head>
 <body>
@@ -120,7 +142,12 @@ var toggleStyle = function() {
 
 		<div class="footer">
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
-		</div>
+	     <a href="tjw84.github.io/intro-jquery-files/intro-jquery-files/Lesson4/DropDownMenuBegin.htm ">Drop Down</a>
+             <a href="tjw84.github.io/intro-jquery-files/intro-jquery-files/Lesson4/animatedMenuBegin.htm ">Animated</a>
+             <a href="tjw84.github.io/intro-jquery-files/intro-jquery-files/Lesson4/InsertHTMLBegin.htm ">Insert</a>
+             <a href="tjw84.github.io/intro-jquery-files/intro-jquery-files/Lesson4/fruitBasketBegin.htm ">Fruit Basket</a>
+             <a href="tjw84.github.io/intro-jquery-files/intro-jquery-files/Lesson4/toggleButtonBegin.htm ">Toggle</a>
+        </div>
 	</div>
 </body>
 </html>
