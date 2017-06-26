@@ -1,4 +1,5 @@
 // Current Location Scripts
+//$('#footer-content').html('<img src="'+data.current_observation.icon_url+'" alt="Current conditons image"');
 $(function () {
 
   var status = $('#status');
@@ -23,7 +24,7 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        url: "http://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/conditions/q/" + lat + "," + long + ".json",
+        url: "https://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/conditions/q/" + lat + ", " + long + ".json",
 dataType : "jsonp",
   success : function(parsed_json) {
   var location = parsed_json['location']['city'];
@@ -40,7 +41,7 @@ $('#summary').html(weather);
 $("#add1").text('relative humidity '+ relative_humidity);
 $("#add2").text(wind_mph + 'MPH');
 $("#add3").html(temp_c + "&#8451");
-
+      
       $("#cover").fadeOut(250);
     }
            });
