@@ -26,7 +26,7 @@ $(function () {
       console.log(lat);
       console.log(long);
     $.ajax({
-        url: "http://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/conditions/q/" + lat + "," + long + ".json",
+        url: "https://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/conditions/q/" + lat + "," + long + ".json",
 dataType : "jsonp",
   success : function(parsed_json) {
       console.log(parsed_json);
