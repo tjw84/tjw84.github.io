@@ -1,8 +1,8 @@
-// Get weather data from wunderground.com
+var returned;
 function getData(input) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "https://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/conditions/q/" +
+    url: "https://api.wunderground.com/api/10a20877c5c8b9d5/geolookup/forcast/conditions/q/" +
       input + ".json",
     dataType: "jsonp",
     success: function(data) {
@@ -19,9 +19,28 @@ function getData(input) {
     }
   });
 }
+$('#query').keyup(function() {
+  var value = $('#query').val();
+  var rExp = new RegExp(value, "i");
+  $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
+    console.log(data); 
+    returned = data;
+      
+      // test for JSON received
+    
+      // Begin building output
+    var output = '<ol>';
+    $.each(returned.RESULTS, function(key, val) {
+      if (val.name.search(rExp) != -1) {
+        output += '<li>';
+        output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+        output += '</li>';
+      }
+    }); // end each
+    output += '</ol>';
 
-// Intercept the menu link clicks
-$("#page-nav").on("click", "a", function(evt) {
+    // Intercept the menu link clicks
+$("#searchResults").on("click", "a", function(evt) {
   evt.preventDefault();
   console.log('click occured');
   // With the text value get the needed value from the weather.json file
@@ -40,11 +59,9 @@ $("#page-nav").on("click", "a", function(evt) {
   });
 });
 
-// A function for changing a string to TitleCase
-function toTitleCase(str) {
-  return str.replace(/\w+/g, function(txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
+      $("#searchResults").html(output); // send results to the page
+  }); // end getJSON
+}); // end onkeyup
+
 
 
