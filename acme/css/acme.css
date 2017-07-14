@@ -1,0 +1,238 @@
+/*This is the weather application stylesheet*/
+
+/* Bring in the weather_type.css file */
+/*
+@import url('user_styles.css');
+
+Change the box model
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+*/
+
+
+/* *********** Base Styles ***********/
+
+
+/*The Body*/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+/*	-webkit-text-size-adjust: 100%;*/
+   background-color: #fff;  
+}
+
+#background {
+    background-repeat: no-repeat;
+    background-image: url(/acme/images/site/background.jpg);
+    background-size: cover;
+}
+
+
+/*The body inner-div*/
+
+#wrapper {
+	width: 100%;
+	padding: 0 0 0;
+	position: relative;
+}
+
+
+/*The page header */
+#page-header{
+    background-color: #fff;
+}
+
+
+/*The page navigation*/
+
+#page-nav ul {
+  border-bottom: 1px solid #fff;
+  list-style: none;
+}
+
+#page-nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#page-nav{
+    position: sticky;
+    font-size: 20px;
+    flex-flow: row;
+    background-color: #de2226;
+}
+#page-nav .flexlist {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#page-nav a {
+	display: flex;
+	flex-flow: row;
+	color: #808080;
+	text-decoration: none;
+}
+
+#page-nav a:hover {
+	background-color: #990033;
+	color: #0000ee;
+	border-bottom: 1px solid #fff;
+}
+
+/*The main element*/
+
+#page-main {
+        background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+#content1{
+    background-color: #fff;
+}
+
+#content2{
+    background-color: #fff;
+
+
+/*The page footer*/
+
+#page-footer {
+	font-size: .7rem;
+	margin: 0;
+    padding: 0;
+        background-color: #fff;
+}
+
+#page-footer > *{
+	padding: 0 0 0 1em;
+}
+
+#page-footer li{
+	padding-right: 1em;
+}
+
+/*Lists as Flex Containers*/
+
+.flexlist {
+	display: flex;
+	align-items: baseline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: gray;
+}
+
+/* ****** page help *****
+
+<section id="">
+<p></p>
+</section>
+
+
+ ***** Utility Classes ***** */
+
+#rocket {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-image: url(/acme/images/site/feature.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #de2226;
+}
+
+#rocket ul {
+	list-style: none;
+	font-size: 12px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+}
+
+#rocket img {
+	width: 70%;
+	height: auto;
+}
+
+section{
+position: relative;
+}
+section p{
+postion:absolute;
+width:50%;
+height:100%;
+right:0;
+top: 0;
+}
+
+.hidden{
+	display: none;
+}
+#page-header{
+    flex-flow: row wrap;
+/*
+ position: fixed;
+ margin-bottom: 400px;
+*/
+}
+/* ***** Medium Screens ***** */
+@media screen and (min-width: 44em){
+	#page-header{
+		font-size: 2vw;
+	}
+	.tagline {
+		font-size: 2em;
+margin-top: -.5em;
+	}
+	#page-nav ul {
+		font-size: 2em;
+	}
+	#page-footer {
+		font-size: 1.25rem;
+	}
+    
+    #page-footer p {
+        flex-flow: row wrap;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #page-nav li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+}
+
+/* ***** Large Screens ***** */
+@media screen and (min-width: 60em){
+	.tagline {
+		font-size: 1em;
+		margin-top: -.5em;
+	}
+	#page-footer {
+		font-size: 2rem;
+	}
+	#summary {
+		font-size: 4vw;
+	}
+    #page-nav li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+}
