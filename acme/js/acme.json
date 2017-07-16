@@ -1,4 +1,11 @@
 {
+    Navigation:{
+        "link1":"Home",
+        "link2":"Anvils",
+        "link3":"Decoys",
+        "link4":"Explosives",
+        "link5":"Traps"
+    },
     "Anvils":{
       "name": "Anvil",
       "path": "images/products/anvil.png",

@@ -1,32 +1,11 @@
-/*This is the weather application stylesheet*/
-
-/* Bring in the weather_type.css file */
-/*
-@import url('user_styles.css');
-
-Change the box model
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-*/
-
-
 /* *********** Base Styles ***********/
 
 
 /*The Body*/
 
 body {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 16px;
-/*	-webkit-text-size-adjust: 100%;*/
+	font-family: jokerman, arial, sans-serif;
+	font-size: 24px;
    background-color: #fff;  
 }
 
@@ -36,6 +15,16 @@ body {
     background-size: cover;
 }
 
+rockettext{
+position: relative;
+}
+Content1{
+position: absolute;
+width:100%;
+height:100%;
+right:0;
+top: 0;
+}
 
 /*The body inner-div*/
 
@@ -45,7 +34,6 @@ body {
 	position: relative;
 }
 
-
 /*The page header */
 #page-header{
     background-color: #fff;
@@ -54,14 +42,20 @@ body {
 
 /*The page navigation*/
 
+#page-nav li{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 #page-nav ul {
   border-bottom: 1px solid #fff;
   list-style: none;
+    font-size: 1em;
 }
 
-#page-nav li{
-    padding-left: 4px;
-    padding-right: 4px;
+#page-nav{
+    position: fixed;
+    bottom: 0;
 }
 
 #page-nav{
@@ -102,6 +96,11 @@ body {
 #content2{
     background-color: #fff;
 
+}
+
+#SideProduct {
+    flex-flow: row;
+}
 
 /*The page footer*/
 
@@ -110,10 +109,6 @@ body {
 	margin: 0;
     padding: 0;
         background-color: #fff;
-}
-
-#page-footer > *{
-	padding: 0 0 0 1em;
 }
 
 #page-footer li{
@@ -147,13 +142,15 @@ body {
 	align-items: flex-start;
 	background-image: url(/acme/images/site/feature.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
 	color: #de2226;
+    height: 25%;
 }
 
 #rocket ul {
+    position: relative;
 	list-style: none;
-	font-size: 12px;
+	font-size: 20px;
 	padding: 0;
 	padding-left: 10px;
 	font-weight: bold;
@@ -167,15 +164,8 @@ body {
 	height: auto;
 }
 
-section{
-position: relative;
-}
-section p{
-postion:absolute;
-width:50%;
-height:100%;
-right:0;
-top: 0;
+productImg {
+width: 100%;    
 }
 
 .hidden{
@@ -183,18 +173,38 @@ top: 0;
 }
 #page-header{
     flex-flow: row wrap;
-/*
- position: fixed;
- margin-bottom: 400px;
-*/
 }
+
+#featuredRecipies{
+ flex: auto;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+recipies {
+    flex: auto;
+    align-content: center;
+    align-items: center;
+    background-color: #808080;
+    vertical-align: middle;
+}
+
+.pic {
+    background-color: #808080;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex: auto;
+    vertical-align: middle;
+}
+
+
 /* ***** Medium Screens ***** */
 @media screen and (min-width: 44em){
 	#page-header{
 		font-size: 2vw;
 	}
-	.tagline {
-		font-size: 2em;
+	
 margin-top: -.5em;
 	}
 	#page-nav ul {
@@ -212,9 +222,13 @@ margin-top: -.5em;
     }
     
     #page-nav li{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
+
+ #troll{
+        width: 50%;
+    }
 
 }
 
@@ -230,9 +244,32 @@ margin-top: -.5em;
 	#summary {
 		font-size: 4vw;
 	}
+    
     #page-nav li{
     padding-left: 10px;
     padding-right: 10px;
 }
 
+    rockettext{
+position: relative;
+}
+Content1{
+position: absolute;
+width:50%;
+height:50%;
+right:0;
+top: 0;
+}
+    #troll{
+        width: 50%;
+    }
+ 
+    #page-nav ul {
+		font-size: 2em;
+	}
+    
+    #page-nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+}
 }
