@@ -1,12 +1,10 @@
-/* *********** Base Styles ***********/
-
-
 /*The Body*/
 
+/* this is not a font I am likely to ever use again but I found it fitting for a Whiley Coyote type site*/
 body {
 	font-family: jokerman, arial, sans-serif;
 	font-size: 24px;
-   background-color: #fff;  
+   background-color: #fff; 
 }
 
 #background {
@@ -15,63 +13,44 @@ body {
     background-size: cover;
 }
 
-rockettext{
-position: relative;
-}
-Content1{
-position: absolute;
-width:100%;
-height:100%;
-right:0;
-top: 0;
-}
 
-/*The body inner-div*/
-
-#wrapper {
-	width: 100%;
-	padding: 0 0 0;
-	position: relative;
-}
 
 /*The page header */
 #page-header{
     background-color: #fff;
+    flex-flow: row wrap;
 }
+
+#page-header img{ 
+width: 90%;}
 
 
 /*The page navigation*/
 
-#page-nav li{
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
 #page-nav ul {
   border-bottom: 1px solid #fff;
   list-style: none;
-    font-size: 1em;
 }
+
+#page-nav li{
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+    flex: auto;
+    justify-content: space-around;
+}
+
 
 #page-nav{
     position: fixed;
     bottom: 0;
-}
-
-#page-nav{
-    position: sticky;
     font-size: 20px;
     flex-flow: row;
     background-color: #de2226;
-}
-#page-nav .flexlist {
-	display: flex;
-	flex-flow: row wrap;
+    width: 100%;
 }
 
 #page-nav a {
-	display: flex;
-	flex-flow: row;
 	color: #808080;
 	text-decoration: none;
 }
@@ -82,6 +61,7 @@ top: 0;
 	border-bottom: 1px solid #fff;
 }
 
+
 /*The main element*/
 
 #page-main {
@@ -89,11 +69,12 @@ top: 0;
     padding: 0;
     margin: 0;
 }
-#content1{
+#Content1{
     background-color: #fff;
+    font-size: 30px;
 }
 
-#content2{
+#Content2{
     background-color: #fff;
 
 }
@@ -101,19 +82,43 @@ top: 0;
 #SideProduct {
     flex-flow: row;
 }
-
 /*The page footer*/
 
 #page-footer {
 	font-size: .7rem;
-	margin: 0;
+	margin-bottom: 24px;
     padding: 0;
         background-color: #fff;
+}
+
+#page-footer > *{
+	padding: 0 0 0 1em;
 }
 
 #page-footer li{
 	padding-right: 1em;
 }
+
+/*The body inner sections*/
+
+#wrapper {
+	width: 100%;
+	padding: 0 0 0;
+	position: relative;
+}
+
+#rocket{
+position: relative;
+    
+}
+#rockettext{
+width:100%;
+height:100%;
+right:0;
+top: 0;
+    font-size: 16px;
+}
+
 
 /*Lists as Flex Containers*/
 
@@ -142,15 +147,13 @@ top: 0;
 	align-items: flex-start;
 	background-image: url(/acme/images/site/feature.jpg);
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 	color: #de2226;
-    height: 25%;
 }
 
 #rocket ul {
-    position: relative;
 	list-style: none;
-	font-size: 20px;
+	font-size: 12px;
 	padding: 0;
 	padding-left: 10px;
 	font-weight: bold;
@@ -160,19 +163,12 @@ top: 0;
 }
 
 #rocket img {
-	width: 70%;
+	width: 100%;
 	height: auto;
 }
 
-productImg {
-width: 100%;    
-}
-
-.hidden{
-	display: none;
-}
-#page-header{
-    flex-flow: row wrap;
+#productImg img {
+width: 100%; 
 }
 
 #featuredRecipies{
@@ -182,11 +178,10 @@ width: 100%;
     vertical-align: middle;
 }
 
-recipies {
+#recipies {
     flex: auto;
     align-content: center;
     align-items: center;
-    background-color: #808080;
     vertical-align: middle;
 }
 
@@ -198,6 +193,11 @@ recipies {
     vertical-align: middle;
 }
 
+.pic img{
+    height: 100%;
+    margin-left: 1.5em;
+}
+
 
 /* ***** Medium Screens ***** */
 @media screen and (min-width: 44em){
@@ -205,11 +205,17 @@ recipies {
 		font-size: 2vw;
 	}
 	
-margin-top: -.5em;
+      #page-header img{ 
+width: 40%;}
+    
+    margin-top: -.5em;{
 	}
-	#page-nav ul {
-		font-size: 2em;
-	}
+
+#page-nav{
+position: relative;    
+}
+
+	
 	#page-footer {
 		font-size: 1.25rem;
 	}
@@ -224,16 +230,68 @@ margin-top: -.5em;
     #page-nav li{
     padding-left: 4px;
     padding-right: 4px;
+        font-size: 1.5em;
 }
 
  #troll{
-        width: 50%;
+        width: 100%;
     }
 
+    .flexlist {
+	display: flex;
+	align-items: baseline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: gray;
+}
+
+#rocket {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-image: url(/acme/images/site/feature.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	color: #de2226;
+    height: 680px;
+}
+    
+#rocket img {
+	width: 50%;
+	height: auto;
+}
+    #rocket ul {
+    position: relative;
+	list-style: none;
+	font-size: 40px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 50%;
+}
+
+       #productImg img {
+width: 50%; 
+max-height: 600px;
+}
+    
+    .pic img{
+    height: 100%;
+    margin-left: 0em;
+}
+    
 }
 
 /* ***** Large Screens ***** */
 @media screen and (min-width: 60em){
+    
+    #page-header img{ 
+width: 20%;}
+    
 	.tagline {
 		font-size: 1em;
 		margin-top: -.5em;
@@ -248,21 +306,8 @@ margin-top: -.5em;
     #page-nav li{
     padding-left: 10px;
     padding-right: 10px;
+        font-size: 40px;
 }
-
-    rockettext{
-position: relative;
-}
-Content1{
-position: absolute;
-width:50%;
-height:50%;
-right:0;
-top: 0;
-}
-    #troll{
-        width: 50%;
-    }
  
     #page-nav ul {
 		font-size: 2em;
@@ -272,4 +317,57 @@ top: 0;
     padding-left: 4px;
     padding-right: 4px;
 }
+ 
+    #rockettext{
+position: absolute;
+width:10%;
+height:50%;
+left:0;
+top: 0;
+}
+    #rockettext img{
+        width: 200%;
+    }
+   
+    #rocket img {
+	width: 50%;
+	height: auto;
+}
+    
+    #rocket {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-image: url(/acme/images/site/feature.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	color: #de2226;
+    height: 700px;
+}   
+    
+    #rocket ul {
+    position: relative;
+	list-style: none;
+	font-size: 40px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 50%;
+         height: 100%;
+}
+
+    #productImg img {
+width: 20%;    
+        max-height: 1%;
+}
+
+    .pic img{
+    height: 200%;
+    margin-left: 6em;
+    margin-right: 0em;
+}
+    
 }
