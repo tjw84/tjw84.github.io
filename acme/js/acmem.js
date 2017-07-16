@@ -1,6 +1,3 @@
-//me
-
-
 $(document).ready(function () {
 	//$('#productWrapper').hide();
     getData();
@@ -12,6 +9,11 @@ function getData() {
 		dataType: "json",
 		success: function (data) {
 			console.log(data);
+            $("#Home").html(data.Navigation.link1);
+			$("#Anvils").html(data.Navigation.link2);
+			$("#Decoys").html(data.Navigation.link3);
+			$("#Explosives").html(data.Navigation.link4);
+			$("#Traps").html(data.Navigation.link5);
 		}
 	});
 }
@@ -22,20 +24,12 @@ $("#page-nav").on("click", "a", function (evt) {
 	evt.preventDefault();
     var link = $(this).text();
 	console.log("the link is:" + link);
-    //link += "";
 
     if (link != 'Home') {
-$('#homepageWrapper').hide();
-$('#productWrapper').show();
-        
-         }
-        else{
-            $('#homepageWrapper').show();
-		$('#productWrapper').hide();
-            
-        } 
-    
-        
+$('#MainProduct').hide();
+$('#SideProduct').show();
+$('#Content1').hide();
+       
 $.ajax({
 		url: "/acme/js/acme.json",
 		dataType: "json",
@@ -43,7 +37,7 @@ $.ajax({
         var picPath=(data[link].path);
            console.log("picPath is:" + picPath); 
             $("#productImg").html("<img src='" + picPath + "'>");
-			$('#description').text(data[link].description);
+			$('#summary').text(data[link].description);
 			$('#madeBy').text(' ' + data[link].manufacturer);
 			$('#reviewScores').text(data[link].reviews + '/5 stars');
 			$('#price').text('Price: $' + data[link].price);
@@ -64,5 +58,11 @@ console.log(made);
     }
 });
    
-        
+        }
+        else{
+$('#SideProduct').hide();
+$('#MainProduct').show();
+$('#Content1').show();	
+            
+        }       
 });
