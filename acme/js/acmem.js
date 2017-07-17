@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	//$('#productWrapper').hide();
     getData();
 	});
 
@@ -41,17 +40,20 @@ $.ajax({
 			$('#madeBy').text(' ' + data[link].manufacturer);
 			$('#reviewScores').text(data[link].reviews + '/5 stars');
 			$('#price').text('Price: $' + data[link].price);
+var made = "data." + link + ".manufacturer";
+console.log(data[link].manufacturer);
+console.log(made);
+            
+            // Code i want to play with latter
+            
 //var picPath= "data." + link + ".path";
 //console.log("picPath is:" + picPath);
-var made = "data." + link + ".manufacturer";
-//var summary = "data." + link + ".description";
+            //var summary = "data." + link + ".description";
 //var review= "data." + link + ".reviews";
 //var price= "data." + link + ".price";
 //$("#productImg").text("<img src='" + picPath + "'>");
 //$("#madeBy").text(' ' + data[link].manufacturer);
 // $("#madeBy").text(made);
-console.log(data[link].manufacturer);
-console.log(made);
 //$("#summary").text(summary);
 //$("#reviewScores").text(review);
 //$("#price").text("Price: " + price);
