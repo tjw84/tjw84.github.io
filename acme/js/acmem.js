@@ -23,7 +23,7 @@ $("#page-nav").on("click", "a", function (evt) {
 	evt.preventDefault();
     var link = $(this).text();
 	console.log("the link is:" + link);
-
+ $("title").text(link + " | ACME");
     if (link != 'Home') {
 $('#MainProduct').hide();
 $('#SideProduct').show();
